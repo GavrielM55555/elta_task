@@ -64,6 +64,7 @@ pip install -r requirements.txt
 ### 1. Train the Model
 
 Run the training script:
+
 python train.py
 
 
