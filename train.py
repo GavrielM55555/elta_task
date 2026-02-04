@@ -266,10 +266,11 @@ def main():
     print(f"{epoch+1:^5} | {train_loss:^10.4f} | {val_loss:^10.4f} | {val_acc:^10.4f} | {val_prec:^10.4f} | {val_rec:^10.4f}")
     
     # --- Save history to CSV ---
-    pd.DataFrame(history).to_csv("training_log.csv", index=False)
+    pd.DataFrame(history).to_csv("logs.csv", index=False)
     print(f"\ntraining done. best model saved to {MODEL_SAVE_PATH}")
-    print("training history saved to training_log.csv")
+    print("training history saved to logs.csv")
 
 if __name__ == "__main__":
 
     main()
+
