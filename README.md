@@ -54,7 +54,7 @@ The solution focuses on careful preprocessing of tabular data and a lightweight 
 ## Setup & Installation
 
 1. Clone the repository (or download the files).
-2. cd to the right folfer
+2. Navigate to the project directory.
 3. Install dependencies:
 
 bash:
