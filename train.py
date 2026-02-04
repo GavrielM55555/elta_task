@@ -78,7 +78,7 @@ def preprocess_data(df):
     df = df.copy()
     
     # extracting title from name
-    df['Title'] = df['Name'].str.extract(' ([A-Za-z]+)\.', expand=False)
+    df['Title'] = df['Name'].str.extract(r' ([A-Za-z]+)\.', expand=False)
     
     # grouping rare titles together
     rare_titles = ['Lady', 'Countess','Capt', 'Col','Don', 'Dr', 'Major', 'Rev', 'Sir', 'Jonkheer', 'Dona']
@@ -271,4 +271,5 @@ def main():
     print("training history saved to training_log.csv")
 
 if __name__ == "__main__":
+
     main()
