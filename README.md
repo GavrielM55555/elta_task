@@ -29,6 +29,7 @@ The solution focuses on careful preprocessing of tabular data and a lightweight 
 └── training_log.csv # Training history (generated after training)
 
 
+
 ### File Descriptions
 
 - **train.py**  
@@ -58,11 +59,6 @@ The solution focuses on careful preprocessing of tabular data and a lightweight 
 ```bash
 pip install -r requirements.txt
 
-How to Run
-1. Train the Model
-
-Run the training script:
-python train.py
 
 Note:
 The script attempts to download the dataset using the Kaggle API.
