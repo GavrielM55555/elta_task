@@ -91,7 +91,7 @@ Rare titles (e.g., Dr, Rev) were grouped into a single Rare category.
 ### Age Imputation
 Missing ages were filled using the median age per Title group.
 
-F### are Transformation
+### Fare are Transformation
 Applied log transformation to reduce skewness.
 
 ### Family Features
@@ -102,32 +102,34 @@ Created an IsAlone feature to capture solo travelers
 
 A lightweight Feed-Forward Neural Network was chosen due to the small, tabular nature of the dataset.
 
-Input layer: dynamic size
+### Input layer: 
+dynamic size
 
-Hidden layer:
+### Hidden layer:
 
 32 neurons
 
-Batch Normalization
+### Batch Normalization
 
-ReLU activation
+### ReLU activation
 
-Regularization:
+### Regularization:
 
 Dropout (0.1)
+weight decay
 
-Output:
+## Output:
 
 Single neuron with Sigmoid activation
 
-Loss Function:
+## Loss Function:
 BCEWithLogitsLoss with positive class weighting to handle class imbalance.
 
-Evaluation & Logging
+## Evaluation & Logging
 
-Train/Validation split: 80% / 20%
+### Train/Validation split: 80% / 20%
 
-Loss and accuracy are logged during training
+### Loss and accuracy are logged during training
 
-Metrics are saved to training_log.csv and visualized in the Streamlit app
+### Metrics are saved to training_log.csv and visualized in the Streamlit app
 
