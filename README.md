@@ -59,6 +59,13 @@ The solution focuses on careful preprocessing of tabular data and a lightweight 
 ```bash
 pip install -r requirements.txt
 
+How to Run
+1. Train the Model
+
+Run the training script:
+
+python train.py
+
 
 Note:
 The script attempts to download the dataset using the Kaggle API.
@@ -71,6 +78,7 @@ After training completes, launch the app:
 python -m streamlit run ds_app.py
 
 This opens a browser tab where you can upload a CSV file and view predictions.
+
 
 Design & Architecture Choices
 Data Preprocessing
@@ -86,37 +94,5 @@ Fare Transformation
 Applied log transformation to reduce skewness.
 
 Family Features
-Created an IsAlone feature to capture solo travelers.
+Created an IsAlone feature to capture solo travelers
 
-Model Architecture
-
-A lightweight Feed-Forward Neural Network was chosen due to the small, tabular nature of the dataset.
-
-Input layer: dynamic size
-
-Hidden layer:
-
-32 neurons
-
-Batch Normalization
-
-ReLU activation
-
-Regularization:
-
-Dropout (0.1)
-
-Output:
-
-Single neuron with Sigmoid activation
-
-Loss Function:
-BCEWithLogitsLoss with positive class weighting to handle class imbalance.
-
-Evaluation & Logging
-
-Train/Validation split: 80% / 20%
-
-Loss and accuracy are logged during training
-
-Metrics are saved to training_log.csv and visualized in the Streamlit app
