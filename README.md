@@ -15,11 +15,17 @@ The solution focuses on careful preprocessing of tabular data and a lightweight 
 
 ## Project Structure
 ├── train.py # Trains the model and saves artifacts
+
 ├── ds_app.py # Streamlit inference app
+
 ├── eda.ipynb # Exploratory Data Analysis
+
 ├── requirements.txt # Python dependencies
+
 ├── data/ # Dataset directory
+
 ├── titanic_model.pth # Saved model weights (generated after training)
+
 └── training_log.csv # Training history (generated after training)
 
 
