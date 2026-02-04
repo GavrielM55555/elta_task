@@ -56,7 +56,7 @@ The solution focuses on careful preprocessing of tabular data and a lightweight 
 1. Clone the repository (or download the files).
 2. Install dependencies:
 
-```bash
+bash:
 pip install -r requirements.txt
 
 
