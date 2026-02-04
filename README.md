@@ -97,3 +97,37 @@ Applied log transformation to reduce skewness.
 ### Family Features
 Created an IsAlone feature to capture solo travelers
 
+
+# Model Architecture
+
+A lightweight Feed-Forward Neural Network was chosen due to the small, tabular nature of the dataset.
+
+Input layer: dynamic size
+
+Hidden layer:
+
+32 neurons
+
+Batch Normalization
+
+ReLU activation
+
+Regularization:
+
+Dropout (0.1)
+
+Output:
+
+Single neuron with Sigmoid activation
+
+Loss Function:
+BCEWithLogitsLoss with positive class weighting to handle class imbalance.
+
+Evaluation & Logging
+
+Train/Validation split: 80% / 20%
+
+Loss and accuracy are logged during training
+
+Metrics are saved to training_log.csv and visualized in the Streamlit app
+
