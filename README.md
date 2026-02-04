@@ -72,7 +72,7 @@ Note:
 The script attempts to download the dataset using the Kaggle API.
 If the API is not configured, manually download train.csv and place it in the data/ folder.
 
-2. Run the Streamlit App
+## 2. Run the Streamlit App
 
 After training completes, launch the app:
 
@@ -81,19 +81,19 @@ python -m streamlit run ds_app.py
 This opens a browser tab where you can upload a CSV file and view predictions.
 
 
-Design & Architecture Choices
-Data Preprocessing
+# Design & Architecture Choices
+## Data Preprocessing
 
-Title Extraction
+### Title Extraction
 Extracted titles (Mr, Mrs, Miss, etc.) from passenger names.
 Rare titles (e.g., Dr, Rev) were grouped into a single Rare category.
 
-Age Imputation
+### Age Imputation
 Missing ages were filled using the median age per Title group.
 
-Fare Transformation
+F### are Transformation
 Applied log transformation to reduce skewness.
 
-Family Features
+### Family Features
 Created an IsAlone feature to capture solo travelers
 
