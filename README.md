@@ -70,7 +70,7 @@ python train.py
 
 Note:
 The script attempts to download the dataset using the Kaggle API.
-If the API is not configured, manually download train.csv and place it in the data/ folder.
+If the API is not configured, manually download train.csv and place it in the data/ folder. name of the file must be train.csv!
 
 ## 2. Run the Streamlit App
 
