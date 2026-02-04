@@ -61,7 +61,7 @@ def show_sidebar():
     if st.sidebar.checkbox("Show Training Performance", value=True):
         st.subheader("Training History")
         try:
-            history_df = pd.read_csv("training_log.csv")
+            history_df = pd.read_csv("logs.csv")
             
             # --- plotting graphs ---
             
@@ -245,4 +245,5 @@ def main():
         st.warning("No model loaded. Please check the sidebar.")
 
 if __name__ == "__main__":
+
     main()
