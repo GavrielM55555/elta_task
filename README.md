@@ -134,3 +134,13 @@ BCEWithLogitsLoss with positive class weighting to handle class imbalance.
 
 ### Metrics are saved to training_log.csv and visualized in the Streamlit app
 
+# to sum up:
+### to run the program:
+1. clone the repo
+2. Navigate to the project directory.
+3. then run: pip install -r requirements.txt
+4. then run: python train.py
+5. then: python -m streamlit run ds_app.py
+6. upload in the web the train.csv from teh data folder
+7. press: run predictions
+
