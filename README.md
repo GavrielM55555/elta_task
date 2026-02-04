@@ -142,5 +142,6 @@ BCEWithLogitsLoss with positive class weighting to handle class imbalance.
 4. then run: python train.py
 5. then: python -m streamlit run ds_app.py
 6. upload in the web the train.csv from teh data folder
-7. press: run predictions
+7. The trained model is selected automatically, but you can also choose a model manually.
+8. press: run predictions
 
